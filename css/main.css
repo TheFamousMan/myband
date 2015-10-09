@@ -1,0 +1,229 @@
+/*
+ * Dit is de custom style sheet van jouw website
+ *
+ */
+
+html,body {
+	margin: 0;	
+}
+
+header {
+	position: relative;
+	height: 18em;
+}            
+header nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #D68137;
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+header nav ul li {
+	display: inline-block;
+}
+header nav ul li a {
+	display: inline-block;
+	padding: 31px;
+	background-color: #D68137;
+	cursor: pointer;
+	text-align: center;
+}
+header nav ul li a:hover {
+	background-color: #A06129;
+}
+.selected{
+	background-color: #D68137;
+}
+header nav ul li a {
+	text-decoration: none;
+	color: white;
+}       
+header h1 {
+	font-size: 10em;
+	margin-top: 20px;
+	text-align: center;
+	margin: 0;
+	font-family: 'Francois One', sans-serif;
+}
+
+#container{
+	padding-top: 20px;
+	width: 100%;
+	height: 400px;
+}
+#container img{
+	margin-top: 60px;
+	width: 30%;
+	margin-right: 100px;
+}
+#container p{
+	margin-top: 120px;
+	float: left;
+	width: 50%;
+	margin-left: 100px;
+	font-family: 'Montserrat', sans-serif;
+}
+#containerG{
+	padding-top: 10px;
+	width: 100%;
+	height: auto;
+	display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+.news_article{
+	width: 35%;
+	background-color: white;
+	height: 300px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(214,129,55,1);
+-moz-box-shadow: 0px 0px 20px 0px rgba(214,129,55,1);
+box-shadow: 0px 0px 20px 0px rgba(214,129,55,1);
+	margin: 20px;
+	margin-bottom: 80px;
+}
+.news_article h1{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin-top: 25px;
+	width: 100%-8px;
+	padding: 8px;
+	font-size: 1.5em;
+	background-color: #A06129;
+	position: absolute; 
+	color: #D68137;
+	text-transform: uppercase;
+}
+.picture{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+.picture img{
+	width: 100%;
+}
+.text{
+	font-family: 'Montserrat', sans-serif;
+	width: 100%-20px;
+	height: 36px;
+	padding: 20px;
+	overflow: hidden;
+	color: #3D3B38;
+}
+.widthStroke{
+	margin-top: 30px;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	/*background-color: red;*/
+}
+.widthStroke a{
+	padding: 15px 100px;
+	background-color: #D68137;
+	font-family: sans-serif;
+	color: white;
+	text-decoration: none;
+	/*text-transform: uppercase;*/
+}
+.widthStroke a:hover{
+	background-color: #A06129;
+}
+input[type="submit"] {
+	margin-left: -4.5px;
+    border: 3px solid #D68137;
+    padding: 7px;
+    background-color: #D68137;
+    text-align: center;
+    width: 80px;
+    color: white;
+    outline: none;
+}
+input[type="submit"]:hover {
+	margin-left: -4.5px;
+    border: 3px solid #A06129;
+    padding: 7px;
+    background-color: #A06129;
+    text-align: center;
+    width: 80px;
+    color: white;
+}
+input[type="text"] {
+    border: 3px solid #D68137;
+    padding: 7px;
+    text-align: center;
+    width: 200px;
+    outline: none;
+}
+#containerA{
+	padding-top: 20px;
+	width: 100%;
+	height: auto;
+	display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+#containerA img{
+	padding: 40px;
+	width: 150px;
+	height: 180px;
+}
+.about_stroke{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	background-color: #A06129;
+}
+.about_stroke h2{
+	margin: 0;
+	padding-top: 5px;
+	font-family: 'Montserrat', sans-serif;
+	color: #D68137;
+}
+
+
+footer{
+	width: 100%;
+	height: 50px;
+	background-color: #D68137;
+	text-align: center;
+	padding-top: 1px;
+	margin-top: 20px;
+}
+footer p{
+	color: #A06129;
+	font-family: 'Francois One', sans-serif;
+
+}
+
+         /*RESPONSIVE*/
+@media screen and (max-width: 800px) {
+	.news_article{
+		width: 70%;
+	}
+	header h1{
+		font-size: 9em;
+	}
+}
+@media screen and (max-width: 970px) {
+	.picture img{
+		width: 150%;
+		margin-left: -10%;
+	}
+	.news_article h1{
+		font-size: 1em;
+	}
+}
+
